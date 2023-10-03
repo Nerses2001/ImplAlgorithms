@@ -1,4 +1,5 @@
-﻿using ImplAlgorithms.Sorting;
+﻿using ImplAlgorithms.Searching;
+using ImplAlgorithms.Sorting;
 using ImplAlgorithms.Utils;
 
 int[] arr1 = { 5, 3, 1, 4, 2 };
@@ -48,3 +49,12 @@ foreach (int i in arr4)
     Console.Write($"{i}, ");
 
 }
+Console.WriteLine("\n");
+
+int[] sortedArray = { 1, 3, 5, 7, 9, 11, 13, 15, 17, 19 };
+(bool found, int index) = BinarySearch.Search(sortedArray, 13);
+if (found)
+{
+    Console.WriteLine(index);
+}
+
