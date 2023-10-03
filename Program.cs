@@ -31,7 +31,19 @@ Console.WriteLine("\n");
 
 int[] arr3 = { 4, 2, 2, 0, 8, 3, 3,-56,-8, 1,-5, 5, 6, 7 ,-5};
 CountingSort.Sort(ref arr3);
+
 foreach (int i in arr3)
+{
+    Console.Write($"{i}, ");
+
+}
+
+Console.WriteLine("\n");
+
+int[] arr4 = { 7, 2, 1, 6, 8, 5, 3, 4 };
+QuickSort.Sort(arr4);
+
+foreach (int i in arr4)
 {
     Console.Write($"{i}, ");
 
