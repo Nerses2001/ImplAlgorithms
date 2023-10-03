@@ -1,8 +1,8 @@
 ﻿
 namespace ImplAlgorithms.Sorting
 {
-    // Bubble sort algorithm with a complexity of O(n^2)
-    internal class BoobleSort
+    // Complexity  O(n^2)
+    internal class BubbleSort
     {
         public static void Sort(int[] input)
         {
