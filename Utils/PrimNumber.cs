@@ -1,7 +1,7 @@
 ﻿
 namespace ImplAlgorithms.Utils
 {
-    //// Complexity O(n * log(log n))
+    // Complexity O(n * log(log n))
     internal class PrimNumber
     {
 
