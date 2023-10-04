@@ -1,4 +1,5 @@
-﻿using ImplAlgorithms.Searching;
+﻿using ImplAlgorithms.Graph;
+using ImplAlgorithms.Searching;
 using ImplAlgorithms.Sorting;
 using ImplAlgorithms.Utils;
 
@@ -52,9 +53,28 @@ foreach (int i in arr4)
 Console.WriteLine("\n");
 
 int[] sortedArray = { 1, 3, 5, 7, 9, 11, 13, 15, 17, 19 };
-(bool found, int index) = BinarySearch.Search(sortedArray, 13);
+(bool found, int index) = BinarySearch
+    .Search(sortedArray, 13);
 if (found)
 {
     Console.WriteLine(index);
 }
 
+
+Dictionary<int, List<int>> graph = new()
+{
+    [0] = new List<int> { 1, 2 },
+    [1] = new List<int> { 0, 3 },
+    [2] = new List<int> { 0, 4 },
+    [3] = new List<int> { 1 },
+    [4] = new List<int> { 2 }
+};
+int startVertex = 0; 
+List<bool> visited = new (graph.Count + 1);
+
+for (int i = 0; i <= graph.Count; i++)
+{
+    visited.Add(false);
+}
+
+DFS.DepthFirstTraversal(graph, startVertex, visited);
