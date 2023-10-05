@@ -1,8 +1,4 @@
-﻿
-using System.Collections.Generic;
-using System.ComponentModel;
-
-namespace ImplAlgorithms.Graph
+﻿namespace ImplAlgorithms.Graph
 {
     // Complexity O(V + E)
 /*    0 -- 1 -- 3
@@ -11,7 +7,7 @@ namespace ImplAlgorithms.Graph
 */
     internal class DFS
     {
-        public static void DepthFirstTraversal(Dictionary<int, List<int>> graph, int v, List<bool> visited)
+        public static void DepthFirstSearch(Dictionary<int, List<int>> graph, int v, List<bool> visited)
         {
             visited[v] = true;
     //        Console.WriteLine("------------------");
@@ -19,7 +15,7 @@ namespace ImplAlgorithms.Graph
             foreach (int neighbor in graph[v])
             {
                 if (!visited[neighbor])
-                    DepthFirstTraversal(graph, neighbor, visited);
+                    DepthFirstSearch(graph, neighbor, visited);
             }
             Console.Write($"{v}, ");
 

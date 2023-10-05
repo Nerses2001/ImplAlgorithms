@@ -77,4 +77,4 @@ for (int i = 0; i <= graph.Count; i++)
     visited.Add(false);
 }
 
-DFS.DepthFirstTraversal(graph, startVertex, visited);
+DFS.DepthFirstSearch(graph, startVertex, visited);
