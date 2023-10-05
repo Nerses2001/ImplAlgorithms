@@ -1,6 +1,7 @@
 ﻿
 namespace ImplAlgorithms.Graphs
 {
+    // Complexity O(V + E)
     internal class BFS
     {
         public static void BreadthFirstSearch(Dictionary<int, List<int>> graph)
