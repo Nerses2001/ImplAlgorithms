@@ -1,4 +1,5 @@
 ﻿using ImplAlgorithms.Graph;
+using ImplAlgorithms.Graphs;
 using ImplAlgorithms.Searching;
 using ImplAlgorithms.Sorting;
 using ImplAlgorithms.Utils;
@@ -78,3 +79,6 @@ for (int i = 0; i <= graph.Count; i++)
 }
 
 DFS.DepthFirstSearch(graph, startVertex, visited);
+Console.WriteLine("\n");
+
+BFS.BreadthFirstSearch(graph);
